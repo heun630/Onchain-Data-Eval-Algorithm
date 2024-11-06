@@ -1,19 +1,21 @@
-## Random Test Data Generator
+## On-chain and Off-chain Data Correlation Analyzer
 
-이 스크립트는 지정된 코인명과 데이터 타입에 대해 랜덤 테스트 데이터를 생성하고, 이를 `data/test` 디렉토리에 CSV 파일로 저장합니다.
+This script acts as a tool to extract correlation coefficients between on-chain and off-chain data by generating random test data for specified coin names and data types. The generated data is saved as a CSV file in the `data/test` directory.
 
-## 사용 방법
+## Usage
 
-다음 명령어를 사용하여 랜덤 테스트 데이터를 생성할 수 있습니다:
+You can generate random test data using the following command:
 
 ```bash
 python3 make_test_results.py <result_count> <coin_name> <data_name>
 ```
 
-## 인자 설명
+## Argument Description
 
-- <result_count>: 생성할 데이터 행의 수.
-- <coin_name>: 암호화폐의 이름 (e,g: BTC, ETH).
-- <data_name>: 데이터의 종류 (e.g: active_address, transaction_count).
+- `<result_count>`: Number of data rows to generate.
+- `<coin_name>`: Name of the cryptocurrency (e.g., BTC, ETH).
+- `<data_name>`: Type of data (e.g., `active_address`, `transaction_count`).
 
+## Purpose
 
+The primary purpose of this script is to generate synthetic test data to analyze and extract correlation coefficients between on-chain and off-chain data. By simulating various datasets, you can evaluate how different on-chain metrics correlate with off-chain factors, aiding in the development of analytical models and algorithms for cryptocurrency data evaluation.
